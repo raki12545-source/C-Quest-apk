@@ -1,0 +1,6 @@
+{
+  "name": "C-Kernel Sim",
+  "description": "An interactive C programming simulation game with levels, animated memory & pointer visualizations, and real-time kernel anomaly events.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
