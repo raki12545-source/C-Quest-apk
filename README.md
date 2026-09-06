@@ -4,41 +4,21 @@ A native Android application built with **Kotlin** and **Jetpack Compose (Materi
 
 ---
 
-## 🚀 Pre-compiled APK Download
+## 🚀 APK Download & Installation
 
-A ready-to-install debug APK is available directly in this repository:
-- **Location**: [`apk/c-kernel-sim-debug.apk`](apk/c-kernel-sim-debug.apk)
-- **Target SDK**: Android 7.0 (API 24) to Android 16 (API 36)
+### Option 1: Download from GitHub Actions (Recommended)
+Every commit automatically triggers a clean build via GitHub Actions CI:
+1. Click the **Actions** tab at the top of your GitHub repository.
+2. Click on the latest workflow run under **Android CI Build**.
+3. Scroll down to the **Artifacts** section at the bottom of the summary page.
+4. Click on **`app-debug-apk`** to download the ZIP file containing `app-debug.apk`.
+5. Transfer the APK to your Android phone and install it!
 
-To install on your phone:
-1. Download `c-kernel-sim-debug.apk` to your Android device.
-2. Tap the file in your Downloads/Files app to install.
-3. Enable "Install unknown apps" if prompted.
-
----
-
-## 🛠️ Building from Source
-
-### Prerequisites
-- **Android Studio** (Ladybug, Koala, Hedgehog, or newer)
-- **JDK 17** (or Android Studio bundled JDK)
-
-### Steps
-1. Clone this repository:
-   ```bash
-   git clone <your-repo-url>
-   cd <repo-folder>
-   ```
-2. Open the project in Android Studio:
-   - Select **File > Open...** and choose the root folder.
-   - Wait for Gradle sync to complete.
-3. Build the APK:
-   - In Android Studio: **Build > Build Bundle(s) / APK(s) > Build APK(s)**
-   - Or from terminal:
-     ```bash
-     ./gradlew assembleDebug
-     ```
-4. Output APK location:
+### Option 2: Build Locally in Android Studio
+1. Clone this repository or download as ZIP.
+2. Open the project folder in **Android Studio**.
+3. Go to **Build > Build Bundle(s) / APK(s) > Build APK(s)**.
+4. Your APK will be located at:
    ```
    app/build/outputs/apk/debug/app-debug.apk
    ```
